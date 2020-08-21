@@ -1,1 +1,2 @@
-# calculator
+# Calculator
+Calculator writen on Python.

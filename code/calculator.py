@@ -1,7 +1,7 @@
 import sys
 
 print(sys.version)
-print('Two-action calc. v0.1')
+print('Two-action calc. v0.1-beta')
 print('Welcome to two-action calculator!')
 
 while True:
@@ -84,5 +84,6 @@ while True:
             res = int(val1)/int(val2)/int(val3)
             print(val1 + " / " + val2 + " / " + val3 + " = " + str(res))
     elif answer == '5' or answer2 == '5':
-        print('Thanks for using program')
+        print('Thanks for using program.')
+        print('Made by CoderPY4')
         break

@@ -6,7 +6,7 @@ You can download calculator in two version in .exe and .py.
 
 ### Calculator v0.1-beta
 
-- [Calculator_v0.1-beta.exe](https://github.com/CoderPY4/calculator/releases/tag/v0.1-beta)
+- [Calculator_v0.1-beta](https://github.com/CoderPY4/calculator/releases/tag/v0.1-beta)
 
 ### Jekyll Themes
 

@@ -1,5 +1,7 @@
 ## Welcome!
 
+![Calculator.py screenshot](screenshot.png)
+
 You can download calculator in two version in .exe and .py.
 
 ## Download

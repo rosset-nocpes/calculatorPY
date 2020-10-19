@@ -1,7 +1,5 @@
 ## Welcome!
 
-[![MIT License](https://img.shields.io/github/license/coderpy4/calculator)]
-
 ![Calculator.py screenshot](/images/screenshot.png)
 
 You can download calculator in two version in .exe and .py.

@@ -1,6 +1,6 @@
 ## Welcome!
 
-![GitHub All Releases](https://img.shields.io/github/downloads/CoderPY4/calculator/total?logo=Nuke)
+![GitHub All Releases](https://img.shields.io/github/downloads/CoderPY4/calculator/total?logo=Nuke) ![GitHub](https://img.shields.io/github/license/CoderPY4/calculator)
 
 ![Calculator.py screenshot](/images/screenshot.png)
 

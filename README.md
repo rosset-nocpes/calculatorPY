@@ -1,5 +1,7 @@
 ## Welcome!
 
+![GitHub All Releases](https://img.shields.io/github/downloads/CoderPY4/calculator/total?logo=Nuke)
+
 ![Calculator.py screenshot](/images/screenshot.png)
 
 You can download calculator in two version in .exe and .py.

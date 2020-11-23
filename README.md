@@ -12,9 +12,9 @@ You can download calculator in two version in .exe and .py.
 
 ### Calculator v0.1-beta
 
-- [Calculator_v0.1-beta.exe](https://github.com/CoderPY4/calculator/releases/download/v0.1-beta/Calculator_v0.1-beta.exe)
+- [Calculator_v0.1-beta.exe](https://github.com/CoderPY4/calculator/releases)
 
-- [Calculator_v0.1-beta.py](https://github.com/CoderPY4/calculator/releases/download/v0.1-beta/calculator.py)
+- [Calculator_v0.1-beta.py](https://github.com/CoderPY4/calculator/releases)
 
 ### Support or Contact
 

@@ -1,8 +1,25 @@
 import sys
+import os
+import time
 
 print(sys.version)
-print('Two-action calc. v0.1-beta')
-print('Welcome to two-action calculator!')
+def splash_screen(seconds):
+  print("\n")
+  print(" ***********************")
+  print(" *                     *")
+  print(" *     CALCULATOR      *")
+  print(" *     v0.1-beta.1     *")
+  print(" *                     *")
+  print(" ***********************")
+  time.sleep(seconds)
+  os.system('cls')  
+  
+
+splash_screen(3)
+
+print(sys.version)
+print('Calculator v0.1-beta.1')
+print('Welcome to calculator!')
 
 while True:
     val1 = input("Enter first number: ")
@@ -85,5 +102,6 @@ while True:
             print(val1 + " / " + val2 + " / " + val3 + " = " + str(res))
     elif answer == '5' or answer2 == '5':
         print('Thanks for using program.')
-        print('Made by CoderPY4')
+        print('Made with ❤ by CoderPY4')
+        time.sleep(4)
         break

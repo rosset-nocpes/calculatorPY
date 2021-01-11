@@ -4,7 +4,7 @@
 
 [![GitHub All Releases](https://img.shields.io/github/downloads/CoderPY4/calculator/total?logo=Nuke)](https://github.com/CoderPY4/calculator/releases) [![MIT LICENSE](https://img.shields.io/github/license/CoderPY4/calculator)](https://github.com/CoderPY4/calculator/blob/master/LICENSE)
 
-![Calculator.py screenshot](/images/screenshot.png)
+![Calculator.py screenshot](/images/Titlebar.png)
 
 You can download calculator in two version in .exe and .py.
 

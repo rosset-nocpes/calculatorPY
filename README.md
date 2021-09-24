@@ -10,7 +10,7 @@ You can download calculator in two version in .exe and .py.
 
 ## Download
 
-### Calculator v0.1-beta.1
+### Calculator v0.1-release
 
 - [Download!](https://github.com/CoderPY4/calculator/releases)
 

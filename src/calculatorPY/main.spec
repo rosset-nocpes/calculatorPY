@@ -36,6 +36,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon="/src/calculatorPY_v0.2-rc1/icon.svg",
 )
 coll = COLLECT(
     exe,

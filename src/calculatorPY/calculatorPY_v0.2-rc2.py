@@ -1,4 +1,4 @@
-#   Developed & maintaned by @coderpy4
+#   Developed & maintained by @coderpy4
 #   Contact info:
 #       Email: coderpy4@proton.me
 #       Telegram: @coderpy4
@@ -9,12 +9,13 @@ import os
 import time
 import webbrowser
 
-v = "v0.2_rc1"
+v = "v0.2_rc2"
 os.system("title" + f" CalculatorPY_{v}")
 
-answerlist = list(range(1,7))
+answerable = list(range(1, 7))
 val = []
 answer = []
+
 
 def splash_screen(seconds):
     os.system('cls')
@@ -29,13 +30,15 @@ def splash_screen(seconds):
     time.sleep(seconds)
     os.system('cls')
 
+
 def clearval():
     val.clear()
     answer.clear()
 
+
 def valcheck(g):
     s = input(f"Enter {g} number: ")
-    if s.isnumeric() == False:
+    if not s.isnumeric():
         print("Invalid input. Please try again.")
         time.sleep(1)
         os.system("cls")
@@ -44,12 +47,13 @@ def valcheck(g):
         s = int(s)
         val.append(s)
 
+
 def anscheck(u):
     print(f"Choose {u} action:")
     print("1. + \n2. - \n3. * \n4. / \n5. None \n6. Exit")
     a = input(f"Enter number of {u} action: ")
     a = int(a)
-    if a not in answerlist:
+    if a not in answerable:
         print("Invalid input. Please try again.")
         time.sleep(1)
         os.system("cls")
@@ -58,13 +62,12 @@ def anscheck(u):
         answer.append(a)
 
 
-
 splash_screen(1)
 
 print(sys.version)
 print(f'CalculatorPY {v}')
 print('Welcome to calculatorPY!')
-print(answerlist)
+print(answerable)
 
 while True:
     valcheck("first")
@@ -172,9 +175,9 @@ while True:
         else:
             print(f"{val[0]} / {val[1]} = {val[0] / val[1]}")
             clearval()
-    elif answer[0] == 6 or answer[1] == 6:
+    elif answer[0] == 6 or answer[1] == 6:  # TODO
         sup = input("Do you want to support me? [y/n] ")
-        if sup == 'y' or sup == 'yes' or sup == 'Y':
+        if sup == 'y' or sup == 'yes' or sup == 'Y' or sup == 'Yes':
             print('1. Patreon \n2. Buy Me A Coffee')
             cos = input('Choose a service: ')
             if cos == '1':
@@ -183,7 +186,7 @@ while True:
             elif cos == '2':
                 webbrowser.open('https://www.buymeacoffee.com/coderpy4')
                 break
-        elif sup == 'n' or sup == 'N' or sup == 'no':
+        elif sup == 'n' or sup == 'N' or sup == 'no' or sup == 'No':
             print('Thanks for using my app.')
             print('Made with ❤  by CoderPY4')
             time.sleep(2)

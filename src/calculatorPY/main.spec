@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['calculatorPY_v0.2-rc1.py'],
+    ['calculatorPY_v0.2-rc2.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -46,5 +46,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='calculatorPY_v0.2-rc1',
+    name='calculatorPY_v0.2-rc2',
 )

@@ -67,7 +67,6 @@ splash_screen(1)
 print(sys.version)
 print(f'CalculatorPY {v}')
 print('Welcome to calculatorPY!')
-print(answerable)
 
 while True:
     valcheck("first")
@@ -175,19 +174,19 @@ while True:
         else:
             print(f"{val[0]} / {val[1]} = {val[0] / val[1]}")
             clearval()
-    elif answer[0] == 6 or answer[1] == 6:  # TODO
+    elif answer[0] == 6 or answer[1] == 6:
         sup = input("Do you want to support me? [y/n] ")
-        if sup == 'y' or sup == 'yes' or sup == 'Y' or sup == 'Yes':
+        if sup in ['y', 'yes', 'Y', 'Yes', 'YES']:
             print('1. Patreon \n2. Buy Me A Coffee')
-            cos = input('Choose a service: ')
+            cos = input("What do you want to support me with? ")
             if cos == '1':
                 webbrowser.open('https://www.patreon.com/coderpy4')
                 break
             elif cos == '2':
                 webbrowser.open('https://www.buymeacoffee.com/coderpy4')
                 break
-        elif sup == 'n' or sup == 'N' or sup == 'no' or sup == 'No':
+        elif sup in ['n', 'no', 'N', 'No', 'NO']:
             print('Thanks for using my app.')
             print('Made with ❤  by CoderPY4')
-            time.sleep(2)
+            time.sleep(1.5)
             break

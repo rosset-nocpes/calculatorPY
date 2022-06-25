@@ -10,11 +10,12 @@ You can download calculator in two version in .exe and .py.
 
 ## Download
 
-### Calculator v0.1-release
+### Calculator v0.2-release
 
 - [Download!](https://github.com/CoderPY4/calculator/releases)
 
-### Support or Contact
+## Support or Contact
 
+- [Reddit](https://reddit.com/AndriOS13)
 
 

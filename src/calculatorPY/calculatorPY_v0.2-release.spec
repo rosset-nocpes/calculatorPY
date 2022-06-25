@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['calculatorPY_v0.2-rc2.py'],
+    ['calculatorPY_v0.2-release.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -27,7 +27,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='calculatorPY_v0.2-rc2',
+    name='calculatorPY_v0.2-release',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

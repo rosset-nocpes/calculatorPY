@@ -9,16 +9,20 @@ import os
 import time
 import webbrowser
 
-v = "v0.2_rc2"
-os.system("title" + f" CalculatorPY_{v}")
+v = "v0.2"
+if os.name == "nt":
+    os.system("title" + f" CalculatorPY_{v}")
+else:
+    sys.stdout.write("\x1b]2;test\x07")
 
 answerable = list(range(1, 7))
 val = []
 answer = []
+def clear(): os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def splash_screen(seconds):
-    os.system('cls')
+    clear()
     print(sys.version)
     print("\n")
     print(" ***********************")
@@ -28,7 +32,7 @@ def splash_screen(seconds):
     print(" *                     *")
     print(" ***********************")
     time.sleep(seconds)
-    os.system('cls')
+    clear()
 
 
 def clearval():
@@ -41,7 +45,7 @@ def valcheck(g):
     if not s.isnumeric():
         print("Invalid input. Please try again.")
         time.sleep(1)
-        os.system("cls")
+        clear()
         valcheck(g)
     else:
         s = int(s)
@@ -56,7 +60,7 @@ def anscheck(u):
     if a not in answerable:
         print("Invalid input. Please try again.")
         time.sleep(1)
-        os.system("cls")
+        clear()
         anscheck(u)
     else:
         answer.append(a)
@@ -74,7 +78,7 @@ while True:
     valcheck("third")
     anscheck("first")
     anscheck("second")
-    print(val)
+    print(val) # Testing purposes
     if answer[0] == 1 and answer[1] == 1:
         print(f"{val[0]} + {val[1]} + {val[2]} = {val[0] + val[1] + val[2]}")
         clearval()
@@ -86,7 +90,8 @@ while True:
         clearval()
     elif answer[0] == 1 and answer[1] == 4:
         if val[2] == '0':
-            print('Cannot divide by zero')
+            print('∞Infinity∞')
+            clearval()
         else:
             print(f"{val[0]} + {val[1]} / {val[2]} = {val[0] + val[1] / val[2]}")
             clearval()
@@ -100,8 +105,9 @@ while True:
         print(f"{val[0]} - {val[1]} * {val[2]} = {val[0] - val[1] * val[2]}")
         clearval()
     elif answer[0] == 2 and answer[1] == 4:
-        if val[2] == '0':
-            print('Cannot divide by zero')
+        if val[2] == 0:
+            print('∞Infinity∞')
+            clearval()
         else:
             print(f"{val[0]} - {val[1]} / {val[2]} = {val[0] - val[1] / val[2]}")
             clearval()
@@ -115,32 +121,36 @@ while True:
         print(f"{val[0]} * {val[1]} * {val[2]} = {val[0] * val[1] * val[2]}")
         clearval()
     elif answer[0] == 3 and answer[1] == 4:
-        if val[2] == '0':
-            print('Cannot divide by zero')
+        if val[2] == 0:
+            print('∞Infinity∞')
         else:
             print(f"{val[0]} * {val[1]} / {val[2]} = {val[0] * val[1] / val[2]}")
             clearval()
     elif answer[0] == 4 and answer[1] == 1:
-        if val[1] == '0':
-            print('Cannot divide by zero')
+        if val[1] == 0:
+            print('∞Infinity∞')
+            clearval()
         else:
             print(f"{val[0]} / {val[1]} + {val[2]} = {val[0] / val[1] + val[2]}")
             clearval()
     elif answer[0] == 4 and answer[1] == 2:
-        if val[1] == '0':
-            print('Cannot divide by zero')
+        if val[1] == 0:
+            print('∞Infinity∞')
+            clearval()
         else:
             print(f"{val[0]} / {val[1]} - {val[2]} = {val[0] / val[1] - val[2]}")
             clearval()
     elif answer[0] == 4 and answer[1] == 3:
-        if val[1] == '0':
-            print('Cannot divide by zero')
+        if val[1] == 0:
+            print('∞Infinity∞')
+            clearval()
         else:
             print(f"{val[0]} / {val[1]} * {val[2]} = {val[0] / val[1] * val[2]}")
             clearval()
     elif answer[0] == 4 and answer[1] == 4:
         if val[1] == '0' and val[2] == '0' or val[1] == '0' or val[2] == '0':
-            print('Cannot divide by zero')
+            print('∞Infinity∞')
+            clearval()
         else:
             print(f"{val[0]} / {val[1]} / {val[2]} = {val[0] / val[1] / val[2]}")
             clearval()
@@ -154,8 +164,8 @@ while True:
         print(f"{val[1]} * {val[2]} = {val[1] * val[2]}")
         clearval()
     elif answer[0] == 5 and answer[1] == 4:
-        if val[2] == '0':
-            print('Cannot divide by zero')
+        if val[2] == 0:
+            print('∞Infinity∞')
         else:
             print(f"{val[1]} / {val[2]} = {val[1] / val[2]}")
             clearval()
@@ -169,8 +179,9 @@ while True:
         print(f"{val[0]} * {val[1]} = {val[0] * val[1]}")
         clearval()
     elif answer[0] == 4 and answer[1] == 5:
-        if val[1] == '0':
-            print('Cannot divide by zero')
+        if val[1] == 0:
+            print('∞Infinity∞')
+            clearval()
         else:
             print(f"{val[0]} / {val[1]} = {val[0] / val[1]}")
             clearval()
@@ -187,6 +198,6 @@ while True:
                 break
         elif sup in ['n', 'no', 'N', 'No', 'NO']:
             print('Thanks for using my app.')
-            print('Made with ❤  by CoderPY4')
+            print('Made with ❤ by coderpy4')
             time.sleep(1.5)
             break

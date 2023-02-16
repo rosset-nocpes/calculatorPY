@@ -1,4 +1,10 @@
-## Welcome!
+# This project is discontinued!
+This project is no longer being developed because this project was created for training. Therefore, expect future projects.
+
+Also, one of the reasons is that I don't have much time to develop software because I'm still a student.
+
+---
+## calculatorPY
 
 [![Join the chat at https://gitter.im/CoderPY4/calculator](https://badges.gitter.im/CoderPY4/calculator.svg)](https://gitter.im/CoderPY4/calculator?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 

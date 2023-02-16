@@ -28,7 +28,7 @@ def splash_screen(seconds):
     print(" ***********************")
     print(" *                     *")
     print(" *     CalculatorPY    *")
-    print(f" *       {v}      *")
+    print(f" *       {v}          *")
     print(" *                     *")
     print(" ***********************")
     time.sleep(seconds)
@@ -66,7 +66,7 @@ def anscheck(u):
         answer.append(a)
 
 
-splash_screen(1)
+splash_screen(2)
 
 print(sys.version)
 print(f'CalculatorPY {v}')
@@ -76,9 +76,11 @@ while True:
     valcheck("first")
     valcheck("second")
     valcheck("third")
+    clear()
     anscheck("first")
+    clear()
     anscheck("second")
-    print(val) # Testing purposes
+    clear()
     if answer[0] == 1 and answer[1] == 1:
         print(f"{val[0]} + {val[1]} + {val[2]} = {val[0] + val[1] + val[2]}")
         clearval()

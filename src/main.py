@@ -9,11 +9,11 @@ import os
 import time
 import webbrowser
 
-v = "v0.2"
+v = "v0.2.1"
 if os.name == "nt":
     os.system("title" + f" CalculatorPY_{v}")
 else:
-    sys.stdout.write("\x1b]2;test\x07")
+    sys.stdout.write(f"\x1b]2;CalculatorPY_v{v}\x07")
 
 answerable = list(range(1, 7))
 val = []
@@ -28,7 +28,7 @@ def splash_screen(seconds):
     print(" ***********************")
     print(" *                     *")
     print(" *     CalculatorPY    *")
-    print(f" *       {v}          *")
+    print(f" *       {v}        *")
     print(" *                     *")
     print(" ***********************")
     time.sleep(seconds)

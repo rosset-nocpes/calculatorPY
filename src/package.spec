@@ -27,7 +27,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='calculatorPY_v0.2-release',
+    name='calculatorPY_v0.2.1',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
